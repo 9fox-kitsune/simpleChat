@@ -1,0 +1,93 @@
+/* Variables */
+
+:root {
+  --basic-black: #000000;
+  --basic-white: #ffffff;
+}
+
+/* Global */
+/* правая панель. Чат занимает 100% ширины и 100% высоты окна, внутри чат делится на зоны как на картинке. Шапка (1) предназначена для элементов управления и имеет фиксированную высоту, подвал (4) предназначен для ввода текста и имеет фиксированную высоту, левая панель (2) предназначена для вывода списка участников чата и может иметь внутреннюю прокрутку, правая панель (3) предназначена для отображения сообщений в чате и может иметь внутреннюю прокрутку. */
+
+.page-body {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-rows: 1fr auto 1fr;
+  background-color: rgba(255, 145, 137, 0.212);
+  outline: 5px solid rgb(255, 0, 0);
+
+}
+
+.page {
+  
+}
+
+/* h2 {
+  display: none;
+} */
+
+/* HEADER */
+
+.main-header {
+  min-height: 50px;
+  outline: 5px solid rgb(251, 255, 0);
+}
+
+.main-navigation {
+
+}
+
+/* CHAT */
+
+.chat {
+  
+  display: flex;
+  
+}
+
+.chat-users {
+  width: 200px;
+  height: 100%;
+  text-overflow: clip;
+  outline: 5px solid rgb(255, 0, 157);
+}
+
+.users {
+  padding-left: 20px;
+}
+
+.users li {
+
+}
+
+.chat-all-messages {
+  flex-grow: 1;
+  outline: 5px solid rgb(204, 0, 255);
+}
+
+/* FOOTER */
+
+.footer {
+  
+  min-height: 100px;
+  
+}
+
+.footer-container {
+
+}
+
+.chat-form {
+
+}
+
+.chat-new-message {
+  width: 100%;
+  min-height: 100px;
+  max-height: auto;
+  border: none;
+
+  
+}
