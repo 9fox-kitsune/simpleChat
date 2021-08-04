@@ -78,7 +78,7 @@ li {
   width: 200px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  overflow-wrap: break-word;
+  /* overflow-wrap: break-word; */
   overflow-y: auto;
   border: 2px solid #ffa600;
 }
@@ -89,6 +89,7 @@ li {
 }
 
 .users li {
+  word-break: break-all;
   list-style: square;
 }
 
@@ -98,7 +99,8 @@ li {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  overflow-wrap: break-word;
+  /* overflow-wrap: break-word; */
+  word-break: break-all;
   overflow-y: auto;
   border: 2px solid #5e00ac;
 }
